@@ -1,0 +1,285 @@
+.body {
+    font-family: 'Chivo', sans-serif;
+    background-image: url(photo/image-host-tablet.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(18, 23, 37, 1);
+    background-position: top center;
+    background-size: 120%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.desktophero {
+    display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #C2CBE5;
+    background-color: rgba(18, 23, 37, 1);
+    opacity: 0.9;
+}
+
+.headbox {
+    width: 338px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-desktop {
+    display: none;
+}
+
+.logo {
+    margin-top: 72px;
+    margin-bottom: 67px;
+}
+
+.h1 {
+    color: #54E6AF;
+    font-size: 27px;
+    text-align: center;
+    line-height: 38px;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.spanh1 {
+    color: white;
+}
+
+.text {
+    margin-top: 16px;
+    margin-bottom: 33px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.appsbox {
+    display: flex;
+    margin-bottom: 48px;
+    flex-direction: row;
+    gap: 23px;
+    justify-content: center;
+}
+
+.appsdesktopbox {
+    display: none;
+}
+
+.spotify {
+    width: 55px;
+
+}
+
+.apple {
+    width: 50px;
+
+}
+
+.google {
+    width: 68px;
+
+}
+
+.pocket {
+    width: 67px;
+}
+
+.btnbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mail-input {
+    display: flex;
+    background: #2C344B;
+    border-radius: 28px;
+    max-width: 326px;
+    height: 46px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    padding-left: 32px;
+}
+
+.btn {
+    background: #54E6AF;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+    border-radius: 28px;
+    color: #121725;
+    border: 0;
+    width: 326px;
+    height: 46px;
+    margin-bottom: 96px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.yleobaphoto {
+    display: none;
+}
+
+
+@media screen and (min-width: 767px) {
+
+    .body {
+        background-size: 60%;
+        background-position: right top;
+        justify-content: flex-start;
+        align-items: start;
+    }
+
+    .main {
+        opacity: block;
+        opacity: 2;
+
+
+    }
+
+    .headbox {
+        width: 635px;
+        height: 509px;
+        align-items: flex-start;
+        margin-left: 39px;
+        margin-bottom: 256px;
+
+    }
+
+    .h1 {
+        text-align: start;
+        margin-top: 93px;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .text {
+        text-align: start;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-desktop {
+        display: block;
+        margin-bottom: 164px;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+    .appsbox {
+        display: none;
+    }
+
+    .appsdesktopbox {
+        display: block;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+
+
+    }
+
+    .spotify {
+        width: 95px;
+        height: 28px;
+    }
+
+    .apple {
+        width: 78px;
+    }
+
+    .google {
+        width: 100px;
+        height: 17px;
+    }
+
+    .pocket {
+        width: 100px;
+        height: 20px;
+    }
+
+    .mail-input {
+        width: 427px;
+        height: 56px;
+        margin-bottom: 64px;
+    }
+
+    .btnbox {
+        position: relative;
+    }
+
+    .btn {
+        width: 162px;
+        height: 46px;
+        border-radius: 28px;
+        box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+        position: absolute;
+        top: 5px;
+        left: 190px;
+    }
+
+    .yleobaphoto {
+        width: 232px;
+        height: 104px;
+        display: block;
+        position: absolute;
+        top: 920px;
+        left: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .body {
+        background-image: none;
+        background-size: 70%;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+
+
+    .logo-desktop {
+        margin-top: 60px;
+        margin-left: 120px;
+    }
+
+    .headbox {
+        margin-left: 120px;
+
+    }
+
+    .yleobaphoto {
+        top: 760px;
+        left: 1100px;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        background-color: rgba(179, 255, 226, 1);
+    }
+
+    .desktophero {
+        position: absolute;
+        z-index: -1;
+        width: 962px;
+        height: 640px;
+        top: 180px;
+        left: 390px;
+        display: block;
+    }
+
+}
