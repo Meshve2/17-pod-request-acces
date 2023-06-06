@@ -121,7 +121,6 @@
     border: 0;
     width: 326px;
     height: 46px;
-    margin-bottom: 96px;
     font-size: 15px;
     font-weight: 400;
 }
@@ -240,36 +239,58 @@
         top: 920px;
         left: 30px;
     }
-}
-
-@media screen and (min-width: 1024px) {
-    .body {
-        background-image: none;
-        background-size: 70%;
-        position: relative;
-        overflow-x: hidden;
-    }
 
 
 
-    .logo-desktop {
-        margin-top: 60px;
-        margin-left: 120px;
-    }
+    @media screen and (min-width: 1024px) {
+        .body {
+            background-image: none;
+            background-size: 70%;
+            position: relative;
+            overflow-x: hidden;
+        }
 
-    .headbox {
-        margin-left: 120px;
 
-    }
 
-    .yleobaphoto {
-        top: 760px;
-        left: 1100px;
-    }
+        .logo-desktop {
+            margin-top: 60px;
+            margin-left: 120px;
+        }
 
-    .btn:hover {
-        cursor: pointer;
-        background-color: rgba(179, 255, 226, 1);
+        .headbox {
+            margin-left: 120px;
+
+        }
+
+        .yleobaphoto {
+            top: 760px;
+            left: 1100px;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: rgba(179, 255, 226, 1);
+        }
+
+        .mail-input {
+            width: 490px;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+
+        .btnbox{
+            display: flex;
+            
+        }
+
+        .redtext {
+            color: red;
+            display: none;
+            margin-top: -70px;
+            margin-bottom: 70px;
+            font-size: 12px;
+            margin-left: 30px;
+        }
     }
 
     .desktophero {
@@ -280,6 +301,12 @@
         top: 180px;
         left: 390px;
         display: block;
+
+        .redtext {
+            color: red;
+            display: none;
+        }
     }
+}
 
 }
